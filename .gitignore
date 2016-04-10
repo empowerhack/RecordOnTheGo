@@ -1,1 +1,4 @@
-node_modules/
+venv
+*.pyc
+staticfiles
+/node_modules/
