@@ -1,16 +1,14 @@
-<!DOCTYPE html>
+{% extends "base.html" %}
 {% load static from staticfiles %}
+
+{% block htmlline %}
 <html lang="en" ng-app="rotgApp">
+{% endblock %}
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record On The Go</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
-
+{% block content %}
 <body id="registration" ng-controller="RegistrationController">
     <ol class="breadcrumb">
-        <li><a href="./index.html">Home</a></li>
+        <li><a href="index.html">Home</a></li>
         <li class="active">Registration</li>
     </ol>
     <div class="container">
@@ -52,14 +50,8 @@
                     <input type="password" class="form-control" id="doctor-password" placeholder="Doctor Registration Code">
                 </div>
             </div>
-            <a ng-href="{{usertype == 'doctor' ? './doctor_dashboard.html' : './patient_dashboard.html'}}" class="btn btn-default">Register</a>
+	    <a ng-href="{% verbatim %}{{usertype == 'doctor' ? './doctor_dashboard.html' : './patient_dashboard.html'}}{% endverbatim %}" class="btn btn-default">Register</a>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/angular.js"></script>
-    <script src="./js/main.js"></script>
 </body>
-
-</html>
-<html>
+{% endblock %}

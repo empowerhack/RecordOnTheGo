@@ -1,11 +1,11 @@
-<!DOCTYPE html>
-<html lang="en" ng-app="rotgApp">
+{% extends "base.html" %}
+{% load static from staticfiles %}
 
-<head>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Record On The Go</title>
-    <link rel="stylesheet" href="./css/main.css">
-</head>
+{% block htmlline %}
+<html lang="en" ng-app="rotgApp">
+{% endblock %}
+
+{% block content %}
 
 <body id="login" ng-controller="LoginController">
     <ol class="breadcrumb">
@@ -30,11 +30,5 @@
             <a ng-href="./{{username}}_dashboard.html" class="btn btn-default">Login</a>
         </form>
     </div>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-    <script src="./js/bootstrap.min.js"></script>
-    <script src="./js/angular.js"></script>
-    <script src="./js/main.js"></script>
 </body>
-
-</html>
-<html>
+{% endblock %}
