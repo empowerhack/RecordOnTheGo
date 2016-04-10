@@ -1,22 +1,35 @@
-@main-red: #ef5b58;
+h1,h2 {
+	text-align: center;
+}
 
-@header-bottom-margin: 0px;
-@header-height: 200px;
+@media screen and (min-width: 640px) {
 
-#top-bar {
-	background: @main-red;
-	height: @header-height;
-	margin-bottom: @header-bottom-margin;
-	#logo-wrapper {
-		height: @header-height;
-		background: #ffffff;
+}
+
+#patient-dashboard {
+
+	.menu {
+		.row {
+			text-align: center;
+			margin-bottom: 10px;
+			a {
+				width: 200px;
+			}
+		}
 	}
-	#logo {
-		height: @header-height;
-		width: @header-height;
-		margin: 0 auto;
-		display: block;
-		position: relative;
-		top: @header-bottom-margin;
+
+	
+}
+#manage-doctor-access {
+	#add-doctor {
+		margin-bottom: 20px;
+	}
+}
+
+#medical-history {
+	.tags {
+		span {
+			font-style: italic;
+		}
 	}
 }
