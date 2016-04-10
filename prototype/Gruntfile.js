@@ -18,7 +18,7 @@ module.exports = function(grunt) {
             main: {
                 files: [
                     // includes files within path
-                    { expand: true, src: ['node_modules/angular/angular.js'], dest: 'js/', filter: 'isFile', flatten: true },
+                    { expand: true, src: ['node_modules/angular/angular.js','node_modules/bootstrap/dist/js/bootstrap.min.js'], dest: 'js/', filter: 'isFile', flatten: true },
 
 
                 ],

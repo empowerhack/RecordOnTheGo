@@ -2,6 +2,12 @@ h1,
 h2 {
   text-align: center;
 }
+@media screen and (min-width: 640px) {
+  h1,
+  h2 {
+    text-align: left;
+  }
+}
 #patient-dashboard .menu .row {
   text-align: center;
   margin-bottom: 10px;
