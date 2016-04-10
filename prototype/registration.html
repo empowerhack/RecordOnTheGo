@@ -32,34 +32,32 @@
                 </div>
             </div>
             <div class="row">
-                
-            </div>
-            <div class="row">
-                <div class="radio">
+                <div class="radio col-sm-12 col-md-6">
                     <label>
                         <input type="radio" name="usertype" id="patient-option" value="patient" ng-model="usertype"> Patient
                     </label>
                 </div>
             </div>
             <div class="row">
-                <div class="radio">
+                <div class="radio col-sm-12 col-md-6">
                     <label>
                         <input type="radio" name="usertype" id="doctor-option" value="doctor" ng-model="usertype"> Doctor
                     </label>
                 </div>
-                <div class="form-group col-sm-12 col-md-3 ng-hide" ng-show="usertype == 'doctor'" >
+            </div>
+            <div class="row ng-hide" ng-show="usertype == 'doctor'" >
+                <div class="form-group col-sm-12 col-md-3">
                     <label for="doctor-password">Doctor Registration Password</label>
                     <input type="password" class="form-control" id="doctor-password" placeholder="Doctor Registration Code">
                 </div>
             </div>
-            <button type="submit" class="btn btn-default">Register</button>
+            <a ng-href="{{usertype == 'doctor' ? './doctor_dashboard.html' : './patient_dashboard.html'}}" class="btn btn-default">Register</a>
         </form>
     </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
     <script src="./js/bootstrap.min.js"></script>
     <script src="./js/angular.js"></script>
     <script src="./js/main.js"></script>
-
 </body>
 
 </html>

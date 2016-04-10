@@ -1,3 +1,6 @@
+.ng-hide {
+  display: none;
+}
 h1,
 h2 {
   text-align: center;
@@ -7,6 +10,9 @@ h2 {
   h2 {
     text-align: left;
   }
+}
+#doctor-dashboard .input-group.filter {
+  margin-bottom: 20px;
 }
 #patient-dashboard .menu .row {
   text-align: center;

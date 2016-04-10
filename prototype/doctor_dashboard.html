@@ -7,21 +7,29 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body id="doctor-dashboard" >
+<body id="doctor-dashboard">
     <div class="container">
         <h1>Doctor Dashboard</h1>
-        <div class="menu">
-            <div class="row">
-                <a class="btn btn-primary" href="./manage_doctor_access.html" role="button">Manage Doctor Access</a>
-            </div>
-            <div class="row">
-                <a class="btn btn-primary" href="./medications.html" role="button">Medications</a>
-            </div>
-            <div class="row">
-                <a class="btn btn-primary" href="./medical_history.html" role="button">Medical History</a>
-            </div>
+        <h2>Patient List</h2>
+        <div class="input-group filter col-md-6">
+            <span class="input-group-addon" id="patient-filter-label">Search</span>
+            <input type="text" class="form-control" placeholder="Enter Patient Username" id="patient-filter">
+        </div>
+        <div class="list-group" id="patient-list">
+            <a href="#" class="list-group-item col-md-3">user1</a>
+            <a href="#" class="list-group-item col-md-3">username4</a>
+            <a href="#" class="list-group-item col-md-3">randomuser</a>
+            <a href="#" class="list-group-item col-md-3">iamarefugee</a>
+            <a href="#" class="list-group-item col-md-3">omgwtfbbq</a>
         </div>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./js/jquery.fastLiveFilter.js"></script>
+    <script>
+    $(function() {
+        $('#patient-filter').fastLiveFilter('#patient-list');
+    });
+    </script>
 </body>
 
 </html>
