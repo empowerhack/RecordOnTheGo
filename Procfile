@@ -1,0 +1,1 @@
+web: gunicorn RecordOnTheGo.wsgi --log-file -
