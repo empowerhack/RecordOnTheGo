@@ -10,12 +10,34 @@
 <body id="medical-history">
     <ol class="breadcrumb">
         <li><a href="./doctor_dashboard.html">Dashboard</a></li>
-        <li><a href="./patient_record.html">Patient Record</a></li>
-        <li class="active">Patient Medications</li>
+        <li class="active">Patient Record</li>
     </ol>
     <div class="container">
-        <h1>Patient Medications <small>iamarefugee</small></h1>
-        
+        <h1>Patient Record <small>iamarefugee</small></h1>
+        <ul class="nav nav-tabs">
+            <li role="presentation"><a href="./patient_record.html">Patient History</a></li>
+            <li role="presentation" class="active"><a href="#">Medications</a></li>
+        </ul>
+        <table class="table table-striped">
+            <tr>
+                <th>Date</th>
+                <th>Medicine</th>
+                <th>Dosage</th>
+                <th>Visit Notes</th>
+            </tr>
+            <tr>
+                <td>10 Apr 2016</td>
+                <td>Insulin</td>
+                <td>5ml</td>
+                <td><a href="./patient_record.html#anchor1">note</a></td>
+            </tr>
+            <tr>
+                <td>4 Apr 2016</td>
+                <td>Statin</td>
+                <td>Once a day</td>
+                <td><a href="./patient_record.html#anchor2">note</a></td>
+            </tr>
+        </table>
     </div>
 </body>
 
