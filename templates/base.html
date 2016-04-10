@@ -1,17 +1,18 @@
 <!DOCTYPE html>
+{% load static from staticfiles %}
 <html lang="en">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Record On The Go</title>
-    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="{% static "css/main.css" %}">
 </head>
 
 <body id="homepage">
     <div class="container-fluid">
     <header>
         
-        <div class="container"><h1><img src="./img/logo.png"/>Record On The Go <small>Prototype</small></h1></div>
+	<div class="container"><h1><img src="{% static "img/logo.png" %}"/>Record On The Go <small>Prototype</small></h1></div>
         
     </header>
     </div>
@@ -21,8 +22,8 @@
             
 
             <div class="row buttons">
-                <a class="btn btn-primary btn-lg " href="./registration.html" role="button">Register</a>
-                <a class="btn btn-primary btn-lg " href="./login.html" role="button">Login</a>
+		<a class="btn btn-primary btn-lg " href="registration.html" role="button">Register</a>
+                <a class="btn btn-primary btn-lg " href="login.html" role="button">Login</a>
             </div>
             <h2>About Record On The Go</h2>
              <p>Record on the Go is an application aimed to allow you to have access to your medical record in a portable electronic way. We hope this will facilitate better long-term care and management of chronic illness. </p>
@@ -42,6 +43,7 @@
             <p>If you think you may be suffering from a medical condition that needs immediate attention please try to find a doctor as soon as possible. If you have any specific questions about any medical matter, you should consult your doctor or other professional healthcare provider.  Every effort is made to keep the website up and running smoothly. However, Record on the takes no responsibility for, and will not be liable for, the website being temporarily unavailable due to technical issues beyond our control. </p>
         </div>
     </div>
+    {% block content %}{% endblock %}
 </body>
 
 </html>
