@@ -2,7 +2,7 @@
 Portable health record for long term refugee health care
 
 ## Prototype site
-[empowerhack.github.io/RecordOnTheGo](http://empowerhack.github.io/RecordOnTheGo)
+[empowerhack.github.io/RecordOnTheGo](http://empowerhack.github.io/RecordOnTheGo/prototype/)
 
 There is a gh-pages prototype site. This is kept on a `gh-pages` branch. Never ake changes to this branch, it is only meant to host the pages site. To update the pages site:
 
