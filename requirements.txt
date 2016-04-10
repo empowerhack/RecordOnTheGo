@@ -21,3 +21,5 @@ six==1.9.0
 uritemplate==0.6
 virtualenv==15.0.1
 virtualenvwrapper-win==1.2.1
+dj_database_url==0.4.1
+whitenoise==3.0
