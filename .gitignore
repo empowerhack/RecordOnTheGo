@@ -2,3 +2,4 @@ venv
 *.pyc
 staticfiles
 /node_modules/
+node_modules/
