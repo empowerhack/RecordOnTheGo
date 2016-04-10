@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="rotgApp">
 
 <head>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,30 +7,33 @@
     <link rel="stylesheet" href="./css/main.css">
 </head>
 
-<body>
-<ol class="breadcrumb">
+<body id="login" ng-controller="LoginController">
+    <ol class="breadcrumb">
         <li><a href="./index.html">Home</a></li>
         <li class="active">Login</li>
     </ol>
     <div class="container">
         <h1>Login</h1>
-
         <form>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-6">
                     <label for="username">Username:</label>
-                    <input class="form-control" id="username" placeholder="Username">
+                    <input class="form-control" id="username" ng-model="username">
                 </div>
             </div>
             <div class="row">
                 <div class="form-group col-sm-12 col-md-6">
                     <label for="password">Password</label>
-                    <input type="password" class="form-control" id="password" placeholder="Password">
+                    <input type="password" class="form-control" id="password" >
                 </div>
             </div>
-            <button type="submit" class="btn btn-default">Submit</button>
+            <a ng-href="./{{username}}_dashboard.html" class="btn btn-default">Login</a>
         </form>
     </div>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <script src="./js/angular.js"></script>
+    <script src="./js/main.js"></script>
 </body>
 
 </html>
