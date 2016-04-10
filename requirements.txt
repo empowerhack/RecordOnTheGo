@@ -23,3 +23,4 @@ virtualenv==15.0.1
 virtualenvwrapper-win==1.2.1
 dj_database_url==0.4.1
 whitenoise==3.0
+gunicorn==19.4.5
