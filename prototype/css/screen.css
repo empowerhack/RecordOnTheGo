@@ -1,0 +1,17 @@
+#top-bar {
+  background: #ef5b58;
+  height: 200px;
+  margin-bottom: 0px;
+}
+#top-bar #logo-wrapper {
+  height: 200px;
+  background: #ffffff;
+}
+#top-bar #logo {
+  height: 200px;
+  width: 200px;
+  margin: 0 auto;
+  display: block;
+  position: relative;
+  top: 0px;
+}
